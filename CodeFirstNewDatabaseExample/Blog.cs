@@ -6,6 +6,9 @@ namespace CodeFirstNewDatabaseExample
     {
         public int BlogId { get; set; }
         public string Name { get; set; }
+
+        //Navigation Properties
+        //EF feature - lazy loading
         public virtual List<Post> Posts { get; set; }
     }
 }
