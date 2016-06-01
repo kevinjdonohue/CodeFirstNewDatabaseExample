@@ -52,17 +52,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Blog.cs" />
-    <Compile Include="BlogContext.cs" />
+    <Compile Include="Models\Blog.cs" />
+    <Compile Include="BloggingContext.cs" />
     <Compile Include="Migrations\201606010434152_InitialCreate.cs" />
     <Compile Include="Migrations\201606010434152_InitialCreate.Designer.cs">
       <DependentUpon>201606010434152_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606010446002_AddUrl.cs" />
+    <Compile Include="Migrations\201606010446002_AddUrl.Designer.cs">
+      <DependentUpon>201606010446002_AddUrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606010449494_AddUser.cs" />
+    <Compile Include="Migrations\201606010449494_AddUser.Designer.cs">
+      <DependentUpon>201606010449494_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606010454109_ChangeDisplayName.cs" />
+    <Compile Include="Migrations\201606010454109_ChangeDisplayName.Designer.cs">
+      <DependentUpon>201606010454109_ChangeDisplayName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Post.cs" />
+    <Compile Include="Models\Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Read.cs" />
     <Compile Include="Save.cs" />
+    <Compile Include="Models\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -71,6 +85,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201606010434152_InitialCreate.resx">
       <DependentUpon>201606010434152_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606010446002_AddUrl.resx">
+      <DependentUpon>201606010446002_AddUrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606010449494_AddUser.resx">
+      <DependentUpon>201606010449494_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606010454109_ChangeDisplayName.resx">
+      <DependentUpon>201606010454109_ChangeDisplayName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

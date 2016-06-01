@@ -1,4 +1,4 @@
-﻿namespace CodeFirstNewDatabaseExample
+﻿namespace CodeFirstNewDatabaseExample.Models
 {
     public class Post
     {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using CodeFirstNewDatabaseExample.Models;
+using System.Collections.Generic;
 
 namespace CodeFirstNewDatabaseExample
 {
@@ -6,6 +7,7 @@ namespace CodeFirstNewDatabaseExample
     {
         public int BlogId { get; set; }
         public string Name { get; set; }
+        public string Url { get; set; }
 
         //Navigation Properties
         //EF feature - lazy loading
